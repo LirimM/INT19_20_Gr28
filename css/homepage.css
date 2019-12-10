@@ -1,0 +1,76 @@
+
+
+    header
+    {
+        min-height: 424px;
+        background-image:url(../images/headerbg.png);
+
+    }
+    div#firstbar
+    {
+        background-color: #19292e;
+        width:100%;
+        height:20px;
+        font-size: 13pt;
+        font-style: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #696864;
+        
+    }
+    div ul li 
+    {
+        list-style: none;
+        display: inline-block;
+    }
+    div p
+    {
+        padding:0.25em;
+    }
+    
+
+    .searchbox
+    {
+        float:right;
+        border-radius: 25px;
+        padding-right: 1em;
+        padding-top: 1em;
+    }
+    div
+    {
+        padding: 0.25em;
+    }
+    nav ul li
+    {
+        list-style: none;
+        display: inline;
+        
+    }
+    
+    nav a
+    {
+        text-decoration: none;
+        padding: 40px;
+        font-size: 12pt;
+        font-style: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+
+    }
+   nav img
+   {
+       float:left;
+       padding-left: 4em;
+   }
+   body
+   {
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+   }
+
+  #menu
+  {
+      float:right;
+      padding-right: 2em;
+  }
+ 
