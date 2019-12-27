@@ -72,3 +72,38 @@ a:hover{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+footer{
+  position:absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+
+}
+#footerdown{
+  background-color:#111c20;
+  top:100%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  
+}
+#footerdown p
+{
+  display: inline;
+  padding-left: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color:#a1a4a4;
+}
+#footerdown a
+{
+  float:right;
+  padding-right: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color:#a1a4a4;
+}
+#footerdown a:hover{
+	color:#97aab0;
+}
+
