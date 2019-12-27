@@ -9,6 +9,8 @@ li{
   }
   a{
     text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:16px;
   }
   #nav{
     width: 100vw;
@@ -34,16 +36,19 @@ li{
 }
 #logo:first-letter {
     font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 #secondWord{
-	font-size: 45px;
+  font-size: 45px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 #below{
-	color:white;
-	opacity: 0.5;
+	color:#999999;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:16px;
 }
 a:hover{
-	opacity: 0.5;
+	color:#97aab0;
 }
 #overIMG{
 	background-color: #0A0A0A;
