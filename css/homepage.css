@@ -1,1 +1,25 @@
-//
+li{
+    list-style-type: none;
+    padding: 30px;
+    font-size: 20px;
+  
+  }
+  li a{
+      color: white;
+  }
+  a{
+    text-decoration: none;
+  }
+  #nav{
+    width: 100vw;
+    background-color: #2D3E45;
+  }
+  
+  body{
+    margin: 0;
+    background-color: #EBF0F2;
+  }
+  #searchNav{
+	height: 50px;
+	background-color: #182930;
+}
