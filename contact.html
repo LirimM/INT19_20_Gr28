@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <title></title>
+</head>
+<body>
+    <header>
+        <div id="searchNav">
+            <div class="left" style="margin-top: 1%; margin-left: 1%; color: #676767; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif">
+                <span>Tel: xxxx xxxxxxxx | Mail: something@gmail.com</span>
+            </div>
+            <div style="float:right; margin-top: 0.5%; margin-left:  0.5%; margin-right:  2%;">
+                <form action="/action_page.php" style="display: flex; height: 35px;">
+                    <input type="text" placeholder="Search term here" style="padding: 3px;border:none; width: 100%; border-radius: 5px 0  0 5px; background-color: #2D3E45; color: #c7ced6; outline: none; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px;">
+                    <button type="submit" style="background-color: #2D3E45; border: none; border-radius: 0 5px 5px 0;"><i class="fa fa-search" style="color: #d1d2ce; "></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div style="background-color: #2D3E45; height: 180px; position: absolute; width: 100%;">
+            <div class="left">
+                <li id="logo">
+                    <a href="#" id="logo">STUDENT <span id="secondWord">E</span>DUCATION</a><br>
+                    <span id="below">Test Test Test Test</span>
+                </li>
+            </div>
+            <div id="right">
+                <li>
+                    <a href="#">Homepage</a><br>
+                    <span id="below">Test Test</span>
+                </li>
+                <li>
+                    <a href="#">Style Demo</a><br>
+                    <span id="below">Test Test</span>
+                </li>
+                <li>
+                    <a href="#">Full width</a><br>
+                    <span id="below">Test Test</span>
+                </li>
+                <li>
+                    <a href="#">Dropdown</a><br>
+                    <span id="below">Test Test</span>
+                </li>
+                <li>
+                    <a href="#">Link text</a><br>
+                    <span id="below">Test Test</span>
+                </li>
+            </div>
+    </header>
+
+    <div  class="maindiv" style="width: 100%; height: 1500px;margin-top: 13%; position: absolute;">
+        <img id="contactbg" src="images/contactbg.jpg" alt="Contact Us"> </img>
+
+        <div class="elementcontainer">
+            <h2> Contact Us</h2>
+            <hr id="hr"> 
+            <div id="callus">
+                <h3 id="callicon" class="fa fa-phone" style="font-size:50px; padding-left: 8%;"> Call Us </h3>
+                <h3 id="calltext" class="fa fa-mobile" style="font-size:30px; padding-left: 8%; display: none;"> 905-492-2356 / 905-492-2357  </h3>
+                
+            </div>
+            <hr id="hr"> 
+            <div id="emailus">
+                <h3 id="emailicon" class="fa fa-envelope" style="font-size:50px; padding-left: 8%;"> E-mail Us </h3>
+                <h3 id="emailtext" class="fa fa-envelope-open-o" style="font-size:30px; padding-left: 8%; display: none;"> info@studenteducation.org  </h3>
+            </div>
+            <hr id="hr"> 
+            <div id="meetus">
+                <h3 id="meeticon" class="fa fa-location-arrow" style="font-size:50px; padding-left: 8%;"> Meet Us </h3>
+                <h3 id="meettext" class="fa fa-map-marker" style="font-size:30px; padding-left: 8%; display: none;"> 9098 Griffin Ave. Santa Cruz, CA  </h3>
+            </div>
+
+        </div>
+        
+    </div>
+    
+
+   
+
+
+    <footer class="footeri">
+            <section id="footerdown">
+                <p> Copyright &copy; All Rights Reserved - Student Education</p>
+                <a href=""> Privacy Policy</a>
+            </section>
+        </footer>
+    
+    </div>
+</div>
+
+    
+</body>
+</html>
+
+
+<style>
+
+
+#callus:hover{
+    width:70%;
+    margin: 2% 15% 2% 15%;
+    -webkit-transition: width 1s,margin 1s, transform 2s;
+    transition: width 1s,margin 1s, transform 2s;
+}
+
+
+#emailus:hover{
+    width:70%;
+    margin: 2% 15% 2% 15%;
+    -webkit-transition: width 1s,margin 1s, transform 2s;
+    transition: width 1s,margin 1s, transform 2s;
+}
+#meetus:hover{
+    width:70%;
+    margin: 2% 15% 2% 15%;
+    -webkit-transition: width 1s,margin 1s, transform 2s;
+    transition: width 1s,margin 1s, transform 2s;
+}
+
+</style>
+
+<script>
+    $('#callus').hover(
+       function(){$('#calltext').show();$('#callicon').hide();}, 
+       function(){$('#callicon').show(); $('#calltext').hide();}
+    );
+
+    $('#emailus').hover(
+       function(){$('#emailtext').show();$('#emailicon').hide();}, 
+       function(){$('#emailicon').show(); $('#emailtext').hide();}
+    );
+    $('#meetus').hover(
+       function(){$('#meettext').show();$('#meeticon').hide();}, 
+       function(){$('#meeticon').show(); $('#meettext').hide();}
+    );
+    
+</script>
