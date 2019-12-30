@@ -12,8 +12,9 @@
 }
 
 .btn{
-    border-radius: 20px;
-    background: #2D3E45;
+    border:0px;
+    background-color: #2D3E45;
+    border-radius: 23px;
     height:70px;
     width:200px;
     font-size: 20px;
@@ -21,12 +22,14 @@
     
 }
 .btn:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #2D3E45;
     color:rgb(57, 54, 68);
     font-size: 23px;
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
     cursor: pointer;
+	
     
   }
 #firstparagraph{
