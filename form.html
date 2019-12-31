@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/form.css">
+    <script src="js/formvalidation.js"></script>
 
     <title></title>
 </head>
@@ -60,7 +61,7 @@
          <!-- <img id="contactbg" src="images/contactbg.jpg" alt="Contact Us"> </img> -->
         <div class="formcontainer">
             <div class="sign-in">
-                <form action="#" class="form">
+                <form action="#" class="form" method="GET" onsubmit="return signinvalidation()">
                     <h1>Sign in</h1>
                     <div class="sign-in-automatically">
                         <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
@@ -68,15 +69,15 @@
                         <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
                     <span><b>or use your account </b></span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="text" placeholder="Username" id="username" />
+                    <input type="password" placeholder="Password" id="password" />
                     <a href="#">Forgot your password?</a>
-                    <button>Sign In</button>
+                    <input type="submit" class="button" value="Sign In">
                 </form>
             </div>
 
             <div class="sign-up">
-                <form action="#" class="form">
+                <form action="#" class="form" method="POST" onsubmit="return signupvalidation()">
                     <h1>Create Account</h1>
                     <div class="sign-up-automatically">
                         <a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a>
@@ -84,15 +85,16 @@
                         <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
                     <span><b>or use your email for registration </b></span>
-                    <input type="text" placeholder="Name" />
-                    <input type="text" placeholder="Last Name" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Password" />
-                    <input type="password" placeholder="Repeat Password" />
-                    <input type="email" placeholder="Alternate E-mail Address" />
-                    <button>Sign Up</button>
+                    <input type="text" placeholder="Username" id="username" />
+                    <input type="text" placeholder="First Name" id="firstname" />
+                    <input type="text" placeholder="Last Name" id="lastname"/>
+                    <input type="email" placeholder="E-mail" id="email" />
+                    <input type="password" placeholder="Password" id="password" />
+                    <input type="password" placeholder="Confirm Password" id="cpassword" />
+                    <input type="submit" class="button" value="Sign Up">
                 </form>
             </div>
+            
             <div class="coverup-container">
 		        <div class="coverup">
 			        <div class="coverup-left">
@@ -100,12 +102,13 @@
 				        <p>To keep connected with us please login with your personal info</p>
 				        <button class="overlaybutton" id="signinbutton">Sign In</button>
 			        </div>
-			    <div class="coverup-right">
-				        <h1>Hello, Friend!</h1>
-				        <p>Enter your personal details and start journey with us</p>
+			        <div class="coverup-right">
+				        <h1>Hello!</h1>
+				        <p>Enter your personal details and create your account!</p>
 				        <button class="overlaybutton" id="signupbutton">Sign Up</button>
-			    </div>
-		    </div>
+			        </div>
+            </div>
+            
 	</div>
 
         </div>
