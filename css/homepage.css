@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+ }
 li{
     list-style-type: none;
     padding: 30px;
@@ -24,8 +27,8 @@ li{
   #searchNav{
 	height: 50px;
 	background-color: #182930;
-}
-
+  }
+  
   .left{
 	float:left;
 }
@@ -155,7 +158,7 @@ width: 230px;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
 
-hr{
+#thinhr{
   border-top: 1px solid black;
   width: 210px;
   margin-bottom: 10%;
