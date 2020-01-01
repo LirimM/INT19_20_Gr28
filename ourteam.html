@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/ourteam.css">
-
     <title></title>
 </head>
 <body>
     <header>
         <div id="searchNav">
             <div class="left" style="margin-top: 1%; margin-left: 1%; color: #676767; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif">
-                <span>Tel: xxxx xxxxxxxx | Mail: something@gmail.com</span>
+                <span>Tel: 3752 59380164 | Mail: contact@studenteducation.com</span>
             </div>
             <div style="float:right; margin-top: 0.5%; margin-left:  0.5%; margin-right:  2%;">
                 <form action="/action_page.php" style="display: flex; height: 35px;">
@@ -33,7 +32,7 @@
             </div>
             <div id="right">
                 <li>
-                    <a href="#">Homepage</a><br>
+                    <a href="homepage.html">Homepage</a><br>
                     <span id="below">Test Test</span>
                 </li>
                 <li>
@@ -41,15 +40,15 @@
                     <span id="below">Test Test</span>
                 </li>
                 <li>
-                    <a href="#">Full width</a><br>
+                    <a href="ourteam.html">Our Team</a><br>
                     <span id="below">Test Test</span>
                 </li>
                 <li>
-                    <a href="#">Dropdown</a><br>
+                    <a href="contact.html">Contact Us</a><br>
                     <span id="below">Test Test</span>
                 </li>
                 <li>
-                    <a href="#">Link text</a><br>
+                    <a href="form.html">Sign Up | Log In</a><br>
                     <span id="below">Test Test</span>
                 </li>
             </div>
@@ -61,19 +60,21 @@
             </div>
     <div id="membersdiv">
         <ul>
-            <li><button class="btn"> Service Directors </button></li>
-            <li><button class="btn"> FESM </button></li> <!-- (Faculty Education Service Managers) -->
-            <li><button class="btn"> SESM</button></li> <!-- (School Education Service Managers) -->
-            <li><button class="btn"> Central Teams</button></li>
+            <li><button class="btn" onClick="document.getElementById('sd').scrollIntoView()"> Service Directors </button></li>
+            <li><button class="btn" onClick="document.getElementById('fesm').scrollIntoView()"> FESM </button></li> <!-- (Faculty Education Service Managers) -->
+            <li><button class="btn" onClick="document.getElementById('sesm').scrollIntoView()"> SESM</button></li> <!-- (School Education Service Managers) -->
+            <li><button class="btn" onClick="document.getElementById('ct').scrollIntoView()"> Central Teams</button></li>
         </ul> 
-    </div>
-
+    </div>"
+	
     <div id="firstparagraph">
         <h1> People and teams - find out who's who </h1>
         <span id="belowtext"> There are almost 700 people working in the Student Education Service.  This page provides information on the teams and some of the people involved. </span>
     </div>
 
+	
     <div class="teamdiv">
+		<a id="sd">
         <h2> Service Directors </h2>
         <span id="belowtext"> 
             The service leadership team is made up of Directors of Student Operations, Student Opportunity and Admissions.</br>
@@ -84,6 +85,7 @@
     </div>
 
     <div class="teamdiv">
+		<a id="fesm">
         <h2> Faculty Education Service Managers </h2>
         <span id="belowtext"> 
             Each Faculty has a Faculty Education Service Manager (FESM).  FESMs are responsible for leading and managing the provision of student services within their faculty, as well as shaping and influencing University-wide strategies. They do this by working in partnership with central student services and other University communities. FESMs are also the convenors of the Cross-Institutional Functional Management Teams (CIFMTs).
@@ -102,14 +104,17 @@
     </div>
 
     <div class="teamdiv">
+        <a id="sesm">
         <h2> School Education Service Managers </h2>
         <span id="belowtext"> 
             <p>These members of staff are based in the school and are involved in supporting learning and teaching activities. They build on existing good practice found in the school and faculty.
             </p>
         </span>
+        
     </div>
 
     <div class="teamdiv">
+        <a id="ct">
         <h2> Central Teams </h2>
         <span id="belowtext">
             These are headed up by: </br>
