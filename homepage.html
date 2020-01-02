@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="css/homepage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/slidetoggle.js"></script>
 
     <title> Homepage </title>
 </head>
@@ -59,10 +60,15 @@
         <div style="background-color: white; width: 98%; margin-left: 1%; margin-top: 1%; position: relative; ">
             <img src="images/bigimg.png" width="100%" height="360px">
             <div id="overIMG"> 
-                <h3 style="margin-left: 3%;">What is Lorem Ipsum?</h3>
-                <p style="text-align: justify; width: 94%; margin-left: 3%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h3 style="margin-left: 3%;">A Foundation Of Learning</h3>
+                <p style="text-align: justify; width: 94%; margin-left: 3%;">
+                    As a private university located near the Rocky Mountains, we empower students who want to make a difference
+                    . Based in south Denver and with over 300 academic programs, we serve about 12,000 graduate and undergraduate 
+                    students. Our classroom academics, hands-on educational experiences and global learning adventures put students 
+                    on the path toward lives and careers that will shape the world.
+                </p>
                 <br>
-                <a href="#" style="margin-left: 80%; background-color: #2D3E45; border: none; border-radius: 2px; height: 20px; text-decoration: none; width: 20%; color: white; padding: 5px;">Click here</a>
+                <a href="#" style="margin-left: 80%; background-color: #2D3E45; border: none; border-radius: 2px; height: 20px; text-decoration: none; width: 20%; color: white; padding: 5px;"> See More</a>
             </div>
             <div style="background-color: #2D3E45; border-top: solid 5px; height: 130px;margin-top: 3%; position: relative; display: flex; padding-left: 2%;">
                 <div style="margin-top: 1%; width: 30%;">
@@ -127,12 +133,17 @@
                 <img src="images/campus.png" alt="University Campus">
                 <p>
                     Discovering our campus is a breeze, whether you’re a high-schooler thinking about attending DU,
-                     an admitted student learning your way around, or a teacher or counselor setting up a group visit.                          
-                    </p>
-                    <a style="color:#465c63; font-family: Georgia, 'Times New Roman', Times, serif; font-size:16px;">Take The tour &raquo;</a>
+                    an admitted student learning your way around, or a teacher or counselor setting up a group visit.                          
+                </p>
+                <p id="moreinfo" style="display:none">
+                    <video width="260px;" height="200px" controls>
+                        <source src="videos/campusvideo.mp4" type="video/mp4">
+                    </video>
+                </p>
+                <a class="seemorebutton" href="javascript:function f(e){e.preventDefault();}" style="color:#465c63; font-family: Georgia, 'Times New Roman', Times, serif; font-size:16px;">Take The Tour &raquo;</a>
             </div>
 
-            <div id="sportingactivites">
+            <div id="sportingactivities">
                 <h4> Sporting Activites</h4> 
                 <hr id="boldhr">
                 <p> Jan 01: <span style="color: #465c63; font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Rugby</b></span></p>
@@ -142,7 +153,7 @@
                 <p> Jan 06: <span style="color: #465c63; font-size: 16px; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Volleyball</b></span></p>
                 <img src="images/volleyball.png" alt="To be filled">
                 <p> Picture from our last game of the season.</p>
-                <a style="color:#465c63; font-family: Georgia, 'Times New Roman', Times, serif; font-size:16px; cursor:hand">View all &raquo;</a>
+                <a>View all &raquo;</a>
             </div>
             <div id="upcomingevents">
                 <h4> Upcoming Events</h4>
@@ -159,7 +170,8 @@
                 <h5> Big Dream Gathering </h5>
                 <p> Saturday 31st January</p>
                 <p>The BIG Dream Gatheringx is a fun and inspiring event that will help YOU to get clear on your dreams and goals...
-                     and get you the boost you need to make them a reality! Dont miss it! </p>
+                    and get you the boost you need to make them a reality! Dont miss it! 
+                </p>
             </div>
         </div>
     
@@ -167,35 +179,38 @@
             <div id="currentstudents">
                 <h4> Current Students</h4>
                 <hr id="thinhr">
-                <img src="images/210x80px.png" alt="To be filled">
+                <img src="images/currentstudents.png" alt="Current Students">
             </div>
             <div id="prospectivestudents">
                 <h4> Prospective Students</h4>
                 <hr id="thinhr">
-                <img src="images/210x80px.png" alt="To be filled">
+                <img src="images/prospectivestudents.png" alt="Prospective Students">
             </div>
             <div id="internationalstudents">
                 <h4> International Students</h4>
                 <hr id="thinhr">
-                <img src="images/210x80px.png" alt="To be filled">
+                <img src="images/internationalstudents.png" alt="International Students">
             </div>
         </div>
         <div id="twitterfeed" style="padding-left:25%;">
-            <svg>
-            <text x="20" y="150" style="fill: #2fcfff;  font-size: 48px; font-family:Helvetica-Neue;">
-                t
-            </text>  
-            </svg>
+            <p id="lettert"> t </p>
+    
             <blockquote style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:22px;">
                 Inteligula congue id elis donec sce sagittis intes id laoreet aenean. 
                 Massawisi condisse leo sem ac tincidunt nibh quis dui fauctor et donecnibh elis velit
                  <a href="https://twitter.com">@studenteducation </a> - 10:15 AM yesterday
             </blockquote>
+
+
+
+
+
+
+
         </div>
 
     </section>
                 
-
 <footer>
     <div id="flip">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
         <div id="panel">
@@ -278,7 +293,7 @@
                 <a href="#"> Semester Dates</a><br>
             </div>
 
-</div>
+    </div>
     <div id="footerdown">
         <p> Copyright &copy; All Rights Reserved - Student Education</p>
         <a href=""> Privacy Policy</a>
@@ -294,9 +309,38 @@
 </html>
 
 <script>
-$(document).ready(function(){
+$('.seemorebutton').click(function() {
+$('#moreinfo').slideToggle();
+    
+    if ($('.seemorebutton').text() == "See more \u00bb") {
+     $(this).text("See less \u00ab")
+     } else {
+     $(this).text("See more \u00bb")
+     }
+     });
+
+    $(document).ready(function(){
     $("#flip").click(function(){
-      $("#panel").slideToggle("slow");
+    $("#panel").slideToggle("slow");
     });
   });
-  </script>
+    
+
+</script>
+
+<style>
+    @font-face {
+    font-family: 'Belligan';
+    src: url('Belligan.woff2') format('woff2'),
+        url('Belligan.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#lettert{
+    font-family: Belligan;
+    color:#2fcfff;
+    font-size:50px;
+}
+
+
+</style>
