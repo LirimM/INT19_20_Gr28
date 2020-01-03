@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/homepage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/slidetoggle.js"></script>
-
+	<script src="/js/geolocation.js"></script>
     <title> Homepage </title>
 </head>
 <body>
     <header>
         <div id="searchNav">
             <div class="left" style="margin-top: 1%; margin-left: 1%; color: #676767; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif">
-                <span>Tel: 303-871-2000 | Mail: contact@universityofdenver.edu</span>
+                <span>Tel: 303-871-2000 |</span> <span> Mail: <a style="color: #676767; font-size: 17px; font-family:Verdana, Geneva, Tahoma, sans-serif" href="mailto:contact@universityofdenver.edu"> contact@universityofdenver.edu</a></span>
             </div>
             <div style="float:right; margin-top: 0.5%; margin-left:  0.5%; margin-right:  2%;">
                 <form action="/action_page.php" style="display: flex; height: 35px;">
@@ -318,14 +318,27 @@ $('#moreinfo').slideToggle();
      $(this).text("See more \u00bb")
      }
      });
-
     $(document).ready(function(){
     $("#flip").click(function(){
     $("#panel").slideToggle("slow");
     });
   });
-    
+  
+  // GEOLOCATOR
+  var x = document.getElementById("coordinates");
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+    
 </script>
 
 <style>
@@ -341,6 +354,4 @@ $('#moreinfo').slideToggle();
     color:#2fcfff;
     font-size:50px;
 }
-
-
 </style>
