@@ -8,7 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/privacypolicy.css">
-    <script src="js/formvalidation.js"></script>
 
     <title> Privacy Policy</title>
 </head>
@@ -115,36 +114,104 @@
 
 
     </div>
+    <footer style="position: absolute; top:1920px;">
+        <div id="flip" style="margin-left: -1px;border-radius:5px;margin-bottom: -5px;">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
+            <div id="panel" style="margin-left:-1px;margin-top: -1px;">
+                <div id="block4"> 
+                    <h4> ADMINISTRATION</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
     
-
-   
-
-
+                <div id="block3"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
     
-    <!--
-        <footer class="footeri">
-            <section id="footerdown">
-                <p> Copyright &copy; All Rights Reserved - Student Education</p>
-                <a href=""> Privacy Policy</a>
-            </section>
-        </footer>
-    -->
- 
-
+                <div id="block3"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+      
+    
+                <div id="block3"> 
+                    <h4> QUICK LINKS</h4>
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block3"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block3"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+        </div>
+        <div id="footerdown">
+            <p> Copyright &copy; All Rights Reserved - Student Education</p>
+            <a href="privacypolicy.html" style="margin-top: 3px;"> Privacy Policy</a>
+        </div> 
+        
+    </footer>  
     
 </body>
 </html>
 
 <script>
-    $('#signinbutton').click(
-       function(){
-                  $('.coverup-left').hide();
-                  $('.coverup-right').show();
-                  }, 
-    );
-    $('#signupbutton').click(
-       function(){ $('.coverup-right').hide();
-                    $('.coverup-left').show();
-                                            }, 
-    );
+
+    $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+    });
+  });
 </script>

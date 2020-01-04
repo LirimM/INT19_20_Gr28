@@ -120,9 +120,9 @@
     </div>
  
     <footer style="position: absolute; top:920px;">
-        <div id="flip">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
-            <div id="panel">
-                <div id="block"> 
+        <div id="flip" style="margin-left: -1px;border-radius:5px;margin-bottom: -5px;">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
+            <div id="panel" style="margin-left:-1px;margin-top: -1px;">
+                <div id="block4"> 
                     <h4> ADMINISTRATION</h4>  
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -135,7 +135,7 @@
                     <a href="#"> Semester Dates</a><br>
                 </div>
     
-                <div id="block"> 
+                <div id="block3"> 
                     <h4> QUICK LINKS</h4>  
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -148,7 +148,7 @@
                     <a href="#"> Semester Dates</a><br>
                 </div>
     
-                <div id="block"> 
+                <div id="block3"> 
                     <h4> QUICK LINKS</h4>  
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -162,7 +162,7 @@
                 </div>
       
     
-                <div id="block"> 
+                <div id="block3"> 
                     <h4> QUICK LINKS</h4>
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -175,7 +175,7 @@
                     <a href="#"> Semester Dates</a><br>
                 </div>
     
-                <div id="block"> 
+                <div id="block3"> 
                     <h4> QUICK LINKS</h4>  
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -188,7 +188,7 @@
                     <a href="#"> Semester Dates</a><br>
                 </div>
     
-                <div id="block"> 
+                <div id="block3"> 
                     <h4> QUICK LINKS</h4>  
                     <a href="#"> Disclaimer</a><br>
                     <a href="#"> Accessibility</a><br>
@@ -225,4 +225,10 @@
                     $('.coverup').show();
                                             }, 
     );
+
+    $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+    });
+  });
 </script>

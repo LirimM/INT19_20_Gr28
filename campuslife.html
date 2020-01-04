@@ -56,7 +56,7 @@
             </div>
     </header>
 
-    <div style="background-color: rgb(255, 255, 255); width: 90%; margin-left: 5%; height: 1500px; margin-top: 15%; position: absolute; border-color: white;">
+    <div style="background-color: rgb(255, 255, 255); width: 90%; margin-left: 5%; height: 2700px; margin-top: 15%; position: absolute; border-color: white;">
         <div style="background-color: rgb(226, 226, 226); width: 98%; margin-left: 1%; margin-top: 1%; position: relative; ">
         <div class="container">
                     <div class="slideshowcontainer">      
@@ -172,20 +172,20 @@
         </div>    
             </div>
         </div>
-        <footer style="position: absolute;margin-top: 100%;">
+        <footer style="position: absolute;margin-left: -1px;">
             <div id="flip">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
-                <div id="panel">
-                    <div id="block"> 
+                <div id="panel" style="margin-left: -1px;margin-top:-1px;">
+                    <div id="block2"> 
                         <h4> ADMINISTRATION</h4>  
-                        <a href="#"> Disclaimer</a><br>
-                        <a href="#"> Accessibility</a><br>
-                        <a href="#"> Freedom of Information</a><br>
-                        <a href="#"> Website Privacy</a><br>
-                        <a href="#"> Press Information</a><br>
-                        <a href="#"> Annual Report</a><br>
-                        <a href="#"> Financial Statements</a><br>
-                        <a href="#"> Job Vacancies</a><br>
-                        <a href="#"> Semester Dates</a><br>
+                        <a style="float:left" href="#"> Disclaimer</a><br>
+                        <a style="float:left" href="#"> Accessibility</a><br>
+                        <a style="float:left" href="#"> Freedom of Information</a><br>
+                        <a style="float:left" href="#"> Website Privacy</a><br>
+                        <a style="float:left" href="#"> Press Information</a><br>
+                        <a style="float:left" href="#"> Annual Report</a><br>
+                        <a style="float:left" href="#"> Financial Statements</a><br>
+                        <a style="float:left" href="#"> Job Vacancies</a><br>
+                        <a style="float:left" href="#"> Semester Dates</a><br>
                     </div>
         
                     <div id="block"> 
@@ -275,6 +275,11 @@
         showSlides();
     });
    
+    $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+    });
+  });
 </script>    
 </body>
 </html>
