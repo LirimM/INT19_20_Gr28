@@ -63,3 +63,51 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	cursor:default;
 }
+
+#panel #block1{
+  display: inline-block;
+  margin-left: -10px;
+  padding-left: 50px;
+  padding-bottom:3%;
+  
+}
+#panel #block2{
+  display: inline-block;
+}
+#block2 h4{
+  color:#ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:16px;
+  font-style:normal;
+  text-align:left;
+}
+#block2 a{
+  color:#a1a4a4;
+  font-size:15px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  cursor: pointer;
+  text-align:left;
+}
+#block2 a:hover{
+  color:#c1d0d4;
+}
+
+#block1 h4{
+  color:#ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:16px;
+  font-style:normal;
+  text-align:left;
+}
+#block1 a{
+  color:#a1a4a4;
+  font-size:15px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: normal;
+  float:left;
+  cursor: pointer;
+}
+#block1 a:hover{
+  color:#c1d0d4;
+}
