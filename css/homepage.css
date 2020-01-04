@@ -58,16 +58,34 @@ a:hover{
 	background-color: #0A0A0A;
 	opacity: 0.9;
 	color: white;
-	width:40%;
+	width:400px;
 	border-color: black;
 	border-width: 5px;
 	border:solid;
 	border-color: black;
 	z-index: 121312;
-	margin-top: -25%;
-	margin-left: 58%;
-	top: 5%;
+	margin-top: -28%;
+	margin-left: 62%;
+	position: absolute;
 	height: 280px;
+}
+#creading{
+  margin-left: 40%; 
+  margin-right: 10%;
+  position: absolute;
+  top: 80%;
+  background-color: #1c2c32;
+  border: 1px solid #465c63; 
+  border-radius: 10px;
+  height: 40px;
+  text-decoration: none; 
+  width: 230px; 
+  color: white;
+  padding: 5px;
+  font-size:17px;
+  text-align: center;
+  cursor: pointer;
+
 }
 
 .rotate-45-right {
@@ -201,9 +219,10 @@ footer{
 }
 
 #footerdown{
+  margin-top: -1px;
   background-color:#111c20; 
   height:50px; 
-  padding-top: 17px;
+  padding-top: 25px;
   
 }
 #footerdown p
@@ -228,3 +247,4 @@ footer{
 #block a:hover{
   color:#c1d0d4;
 }
+
