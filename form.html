@@ -29,7 +29,7 @@
         <div style="background-color: #2D3E45; height: 180px; position: absolute; width: 100%;">
             <div class="left">
                 <li id="logo">
-                    <a href="#" id="logo">UNIVERSITY OF <span id="secondWord">D</span>ENVER</a><br>
+                    <a href="homepage.html" id="logo">UNIVERSITY OF <span id="secondWord">D</span>ENVER</a><br>
                     <span id="below">Denver, Colorado</span>
                 </li>
             </div>
@@ -58,7 +58,7 @@
     </header>
 
     <div  class="bigdiv">
-         <!-- <img id="contactbg" src="images/contactbg.jpg" alt="Contact Us"> </img> -->
+         
         <div class="formcontainer">
             <div class="sign-in">
                 <form action="#" class="form" method="GET" onsubmit="return signinvalidation()">
@@ -95,41 +95,119 @@
                 </form>
             </div>
             
+            
             <div class="coverup-container">
 		        <div class="coverup">
 			        <div class="coverup-left">
 				        <h1>Welcome Back!</h1>
 				        <p>To keep connected with us please login with your personal info</p>
 				        <button class="overlaybutton" id="signinbutton">Sign In</button>
-			        </div>
+                    </div></div>
+                    <div class="coverup2">
 			        <div class="coverup-right">
 				        <h1>Hello!</h1>
 				        <p>Enter your personal details and create your account!</p>
 				        <button class="overlaybutton" id="signupbutton">Sign Up</button>
-			        </div>
-            </div>
+                    </div>
+                    </div>
+        
+            
             
 	</div>
 
         </div>
 
     </div>
-    
-
-   
-
-
-    
-    <!--
-        <footer class="footeri">
-            <section id="footerdown">
-                <p> Copyright &copy; All Rights Reserved - Student Education</p>
-                <a href=""> Privacy Policy</a>
-            </section>
-        </footer>
-    -->
  
-
+    <footer style="position: absolute; top:920px;">
+        <div id="flip">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
+            <div id="panel">
+                <div id="block"> 
+                    <h4> ADMINISTRATION</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+      
+    
+                <div id="block"> 
+                    <h4> QUICK LINKS</h4>
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+                <div id="block"> 
+                    <h4> QUICK LINKS</h4>  
+                    <a href="#"> Disclaimer</a><br>
+                    <a href="#"> Accessibility</a><br>
+                    <a href="#"> Freedom of Information</a><br>
+                    <a href="#"> Website Privacy</a><br>
+                    <a href="#"> Press Information</a><br>
+                    <a href="#"> Annual Report</a><br>
+                    <a href="#"> Financial Statements</a><br>
+                    <a href="#"> Job Vacancies</a><br>
+                    <a href="#"> Semester Dates</a><br>
+                </div>
+    
+        </div>
+        <div id="footerdown">
+            <p> Copyright &copy; All Rights Reserved - Student Education</p>
+            <a href="privacypolicy.html" style="margin-top: 3px;"> Privacy Policy</a>
+        </div> 
+        
+    </footer>  
     
 </body>
 </html>
@@ -137,13 +215,14 @@
 <script>
     $('#signinbutton').click(
        function(){
-                  $('.coverup-left').hide();
-                  $('.coverup-right').show();
+                  $('.coverup').hide();
+                  $('.coverup2').show();
+                  
                   }, 
     );
     $('#signupbutton').click(
-       function(){ $('.coverup-right').hide();
-                    $('.coverup-left').show();
+       function(){ $('.coverup2').hide();
+                    $('.coverup').show();
                                             }, 
     );
 </script>

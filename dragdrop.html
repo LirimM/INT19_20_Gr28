@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/dragdrop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/dragdrop.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex; justify-content: center;">
+        <div id="box">
+          <div id="drag-1" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="images/upleft1.png" draggable="true" ondragstart="drag(event)" id="drag1" width="112px" height="112px">
+        </div>
+    
+        <div id="drag-2" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="images/upright1.png" draggable="true" ondragstart="drag(event)" id="drag2" width="112px" height="112px">
+        </div>
+    
+        <div id="drag-3" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="images/downright1.png" draggable="true" ondragstart="drag(event)" id="drag3" width="112px" height="112px">
+        </div>
+    
+        <div id="drag-4" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img src="images/downleft1.png" draggable="true" ondragstart="drag(event)" id="drag4" width="112px" height="112px">
+        </div>
+    
+      
+          <div class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+          <div class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+          <div class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+          <div class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+        </div>
+      </div> 
+      <div style="margin-left: 40%;">
+            <p>Count time spent solving the puzzle: <output id="result"></output></p>
+            <button onclick="startWorker()">Start Timer</button> 
+            <button onclick="stopWorker()">Stop Timer</button>
+          </div>
+    
+</body>
+</html>
+
+
+
+<script>
+  var w;
+  
+  function startWorker() {
+    var d = new Date();
+    var h = d.getTime();
+    sessionStorage.setItem('ora',h);
+    if(typeof(Worker) !== "undefined") {
+      if(typeof(w) == "undefined") {
+        w = new Worker("demo_workers.js");
+      }
+      w.onmessage = function(event) {
+        document.getElementById("result").innerHTML = event.data;
+      };
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+  }
+  
+  function stopWorker() { 
+    w.terminate();
+    w = undefined;
+    alert("Koha e klikimit te butonit: "+sessionStorage.getItem('ora'));
+  }
+  </script>
