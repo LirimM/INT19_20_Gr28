@@ -67,7 +67,8 @@
 .dschedulefront{
   border-radius: 25px;
   position: absolute;
-  background-color:#2D3E45;
+  background: rgb(83,125,143);
+  background: linear-gradient(180deg, rgba(83,125,143,1) 0%, rgba(65,135,163,1) 49%, rgba(83,125,143,1) 100%);
   color:rgb(221, 216, 216);
   filter: opacity(80%);
 }
