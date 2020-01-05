@@ -12,10 +12,11 @@
     font-size: 50px;
     padding:3% 0 0 3%;
 }
-.bigdiv li h2{
+.bigdiv li {
     display: list-item;
     list-style-type: upper-roman;
     margin: 3% 0 0 1%;
+    font-size: 25px;
 }
 .bigdiv p{
     font-size: 20px;
