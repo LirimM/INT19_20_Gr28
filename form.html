@@ -69,10 +69,10 @@
                         <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
                     <span><b>or use your account </b></span>
-                    <input type="text" placeholder="Username" id="username" />
-                    <input type="password" placeholder="Password" id="password" />
+                    <input type="text" placeholder="Username" id="susername"  />
+                    <input type="password" placeholder="Password" id="spassword"  />
                     <a href="#">Forgot your password?</a>
-                    <input type="submit" class="button" value="Sign In">
+                    <input type="submit" class="button" value="Sign In" id="signbutton">
                 </form>
             </div>
 
@@ -85,12 +85,12 @@
                         <a href="#" class="social"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
                     <span><b>or use your email for registration </b></span>
-                    <input type="text" placeholder="Username" id="username" />
-                    <input type="text" placeholder="First Name" id="firstname" />
-                    <input type="text" placeholder="Last Name" id="lastname"/>
-                    <input type="email" placeholder="E-mail" id="email" />
-                    <input type="password" placeholder="Password" id="password" />
-                    <input type="password" placeholder="Confirm Password" id="cpassword" />
+                    <input type="text" placeholder="Username" id="username"  />
+                    <input type="text" placeholder="First Name" id="firstname"  />
+                    <input type="text" placeholder="Last Name" id="lastname"  />
+                    <input type="email" placeholder="E-mail" id="email"  />
+                    <input type="password" placeholder="Password" id="password"  />
+                    <input type="password" placeholder="Confirm Password" id="cpassword"  />
                     <input type="submit" class="button" value="Sign Up">
                 </form>
             </div>
@@ -121,7 +121,7 @@
  
     <footer style="position: absolute; top:920px;">
         <div id="flip" style="margin-left: -1px;border-radius:5px;margin-bottom: -5px;">Click to open slide panel<i class="fa fa-angle-double-down" style="margin-left: 5px;"></i> </div>
-            <div id="panel" style="margin-left:-1px;margin-top: -1px;">
+            <div id="panel" style="margin-left:-1px;margin-top: -1px;border-top: solid 1px white;">
                 <div id="block4"> 
                     <h4> ADMINISTRATION</h4>  
                     <a href="#"> Disclaimer</a><br>
@@ -230,5 +230,16 @@
     $("#flip").click(function(){
     $("#panel").slideToggle("slow");
     });
+    var username = localStorage.getItem('Perdoruesi');
+    
+    if(username!=null){
+        $("#susername").val(username);
+    }
   });
+  
+  $('#signbutton').click(function(){
+					localStorage.setItem("Perdoruesi", $("#susername").val());
+					},
+					);
+
 </script>

@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/dragdrop.js"></script>
     
-    <title>Document</title>
+    <title>Drag and Drop</title>
 </head>
 <body>
     <div style="display:flex; justify-content: center;">
@@ -40,7 +40,7 @@
     
         </div>
       </div> 
-      <div style="margin-left: 40%;">
+      <div>
             <p>Count time spent solving the puzzle: <output id="result"></output></p>
             <button onclick="startWorker()">Start Timer</button> 
             <button onclick="stopWorker()">Stop Timer</button>
@@ -56,11 +56,13 @@
   
   function startWorker() {
     var d = new Date();
-    var h = d.getTime();
+    var h = d.toLocaleTimeString();
     sessionStorage.setItem('ora',h);
+	
+    
     if(typeof(Worker) !== "undefined") {
       if(typeof(w) == "undefined") {
-        w = new Worker("demo_workers.js");
+        w = new Worker("js/demo_workers.js");
       }
       w.onmessage = function(event) {
         document.getElementById("result").innerHTML = event.data;
@@ -73,6 +75,6 @@
   function stopWorker() { 
     w.terminate();
     w = undefined;
-    alert("Koha e klikimit te butonit: "+sessionStorage.getItem('ora'));
+    alert("Koha e perfundimit te enigmes: "+sessionStorage.getItem('ora'));
   }
   </script>
