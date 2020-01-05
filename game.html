@@ -111,6 +111,23 @@ function clearmove() {
     myGamePiece.speedY = 0; 
 }
 
+function funksioni() {
+  var message, x;
+  message = document.getElementById("p");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "eshte i zbrazet";
+    if(isNaN(x)) throw "nuk eshte numer";
+    x = Number(x);
+    if(x < 1)  throw "eshte me i vogel se 1";
+    if(x > 100)   throw "eshte me i madh se 100";
+  }
+  catch(err) {
+    message.innerHTML = "Inputi juaj " + err;
+  }
+}
+
 </script>
 <div style="text-align:center;width:480px;">
   <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
@@ -119,6 +136,16 @@ function clearmove() {
   <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 </div>
 <p style="margin-left:9%;">Levize katrorin tek caku per te fituar lojen!</p>
+
+
+<br> <br>
+
+<h4>Shenoni nje numer nga 1 - 100:</h4>
+
+<input id="demo" type="text">
+<button type="button" onclick="funksioni()">Testo</button>
+<br>
+<span id="p"></span>
 </body>
 </html>
 
