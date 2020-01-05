@@ -1,7 +1,7 @@
 function signinvalidation()
 {
-    var user=document.getElementById("username").value;
-    var pw=document.getElementById("password").value;
+    var user=document.getElementById("susername").value;
+    var pw=document.getElementById("spassword").value;
     ok="true";
     if(user=="" && pw=="")
     {
@@ -64,16 +64,11 @@ else if (pw.search(/[0-9]/) < 0) {
         alert("Password should contain at least one digit!"); 
 		ok="false";
      }
-else if(password.search(/[!#$%&? "]/)<0)
-	  {
-	  alert("Password should contain at least one special character!"); 
-		ok="false";
-      }
- if(cpw!=""){
+ else if(cpw==""){
      alert("Confirm password is required!");
      ok="false";
  }     
-     if(!pw.match(cpw))
+     else if(pw!= cpw)
      {
       alert("Passwords do not match!");
       ok="false";
