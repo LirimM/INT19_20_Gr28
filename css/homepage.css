@@ -305,3 +305,20 @@ footer{
   font-size:17px;
   text-transform: uppercase;
 }
+
+#locationbutton{
+  border-radius: 5px;
+  border:none;
+  height: 25px;
+  width: 130px;
+  text-align: center;
+  color:white;
+  background-color:#3d5763;
+  text-transform: uppercase;
+}
+#locationbutton:hover{
+  cursor: pointer;
+  background-color: #567b8b;
+  color:white;
+  font-weight: bold;
+}
